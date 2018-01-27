@@ -1,0 +1,4 @@
+[tool.towncrier]
+    package = 'cachelock'
+    filename = 'CHANGELOG.md'
+    title_format =  '{version} ({project_date})'

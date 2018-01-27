@@ -1,0 +1,19 @@
+language: python
+
+cache: pip
+
+matrix:
+    include:
+        - python: '3.6'
+
+install:
+  - make init
+
+before_script:
+  - make lint
+
+script:
+  - tox
+
+after_success:
+  - codecov

@@ -19,7 +19,7 @@ setup(
     author_email='douglas.farinelli@gmail.com',
     keywords='lock cache once celery tasks single-execution',
     description='A simple look that uses the cache as acquirer',
-    long_description=read('README.rst'),
+    long_description=read('README.md'),
     packages=['cachelock'],
     classifiers=[
         'Framework :: Django',

@@ -18,6 +18,7 @@ pytest-cov = "==2.5.1"
 pytest = "==3.3.1"
 pytest-pythonpath = "==0.7.1"
 towncrier = "==17.8.0"
+coveralls = "*"
 
 
 [packages]

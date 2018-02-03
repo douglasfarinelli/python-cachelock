@@ -1,5 +1,9 @@
-python-cachelock: A simple look that uses the cache as acquirer
+A simple look that uses the cache as acquirer
 ===============================================================
+
+[![PyPI version](https://badge.fury.io/py/cachelock.svg)](https://badge.fury.io/py/cachelock)
+[![Build Status](https://travis-ci.org/douglasfarinelli/python-cachelock.svg?branch=master)](https://travis-ci.org/douglasfarinelli/python-cachelock)
+[![Coverage Status](https://coveralls.io/repos/github/douglasfarinelli/python-cachelock/badge.svg?branch=master)](https://coveralls.io/github/douglasfarinelli/python-cachelock?branch=master)
 
 The motivation: None! It's just for fun \ õ /
 
@@ -21,11 +25,10 @@ With cachelock.Lock
 
 Arguments:
 
-    @cachelock.Lock(
+    with cachelock.Lock(
         key=...
         cache=...,
-    )
-    ...
+    ) ...
 
 You should use the Lock class as with context:
 
@@ -88,3 +91,10 @@ To work it is necessary that the implementation of the cache has the `get`, `del
             pass
 
     cache = DummyCache()
+    
+    @cachelock.once(key=..., cache=cache)
+    
+    or
+    
+    with cachelock.Lock(key..., cache=cache) ...
+    

@@ -6,7 +6,7 @@ A simple look that uses the cache as acquirer
 [![Coverage Status](https://coveralls.io/repos/github/douglasfarinelli/python-cachelock/badge.svg?branch=master)](https://coveralls.io/github/douglasfarinelli/python-cachelock?branch=master)
 [![PyPI version](https://badge.fury.io/py/cachelock.svg)](https://pypi.python.org/pypi/cachelock)
 
-The motivation: None! It's just for fun \ õ /
+The `cachelock` serves to ensure that your code block or function is executed one at a time.
 
 How to install:
 ===============

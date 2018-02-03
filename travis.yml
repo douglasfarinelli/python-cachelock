@@ -1,19 +1,13 @@
+sudo: false
+
 language: python
 
-cache: pip
-
-matrix:
-    include:
-        - python: '3.6'
+python:
+  - 3.6
 
 install:
-  - make init
-
-before_script:
-  - make lint
+  - echo 'Install dependencies' && make dependencies
 
 script:
-  - tox
-
-after_success:
-  - codecov
+  - echo 'Run PyLint' && make lint
+  - echo 'Run coverage and tests' && make cov-tests

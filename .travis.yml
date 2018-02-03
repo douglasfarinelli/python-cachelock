@@ -12,5 +12,5 @@ before_script:
 script:
   - echo 'Run coverage and tests' && make cov-tests
 
-after_sucess:
-  coveralls
+after_success:
+  - echo 'Run coveralls' && coveralls

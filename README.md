@@ -1,9 +1,10 @@
 A simple look that uses the cache as acquirer
 ===============================================================
 
+[![Supported Versions](https://img.shields.io/pypi/pyversions/cachelock.svg)](https://pypi.python.org/pypi/cachelock)
 [![Build Status](https://travis-ci.org/douglasfarinelli/python-cachelock.svg?branch=master)](https://travis-ci.org/douglasfarinelli/python-cachelock)
 [![Coverage Status](https://coveralls.io/repos/github/douglasfarinelli/python-cachelock/badge.svg?branch=master)](https://coveralls.io/github/douglasfarinelli/python-cachelock?branch=master)
-[![PyPI version](https://badge.fury.io/py/cachelock.svg)](https://badge.fury.io/py/cachelock)
+[![PyPI version](https://badge.fury.io/py/cachelock.svg)](https://pypi.python.org/pypi/cachelock)
 
 The motivation: None! It's just for fun \ õ /
 

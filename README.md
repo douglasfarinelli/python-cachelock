@@ -1,9 +1,9 @@
 A simple look that uses the cache as acquirer
 ===============================================================
 
-[![PyPI version](https://badge.fury.io/py/cachelock.svg)](https://badge.fury.io/py/cachelock)
 [![Build Status](https://travis-ci.org/douglasfarinelli/python-cachelock.svg?branch=master)](https://travis-ci.org/douglasfarinelli/python-cachelock)
 [![Coverage Status](https://coveralls.io/repos/github/douglasfarinelli/python-cachelock/badge.svg?branch=master)](https://coveralls.io/github/douglasfarinelli/python-cachelock?branch=master)
+[![PyPI version](https://badge.fury.io/py/cachelock.svg)](https://badge.fury.io/py/cachelock)
 
 The motivation: None! It's just for fun \ õ /
 
@@ -15,7 +15,7 @@ How to install:
 How to use
 ==========
 
-    You can use of two forms:
+You can use of two forms:
 
     - Use the `Lock` class to your blocks;
     - Or, use the decorator `once` to block your functions or tasks;

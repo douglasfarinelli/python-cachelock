@@ -1,5 +1,3 @@
-sudo: false
-
 language: python
 
 python:
@@ -8,6 +6,8 @@ python:
 install:
   - echo 'Install dependencies' && make dependencies
 
-script:
+before_script:
   - echo 'Run PyLint' && make lint
+
+script:
   - echo 'Run coverage and tests' && make cov-tests

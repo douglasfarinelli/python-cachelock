@@ -1,28 +1,32 @@
-A simple look that uses the cache as acquirer
-===============================================================
+python-cachelock
+================
 
 [![Supported Versions](https://img.shields.io/pypi/pyversions/cachelock.svg)](https://pypi.python.org/pypi/cachelock)
 [![Build Status](https://travis-ci.org/douglasfarinelli/python-cachelock.svg?branch=master)](https://travis-ci.org/douglasfarinelli/python-cachelock)
 [![Coverage Status](https://coveralls.io/repos/github/douglasfarinelli/python-cachelock/badge.svg?branch=master)](https://coveralls.io/github/douglasfarinelli/python-cachelock?branch=master)
 [![PyPI version](https://badge.fury.io/py/cachelock.svg)](https://pypi.python.org/pypi/cachelock)
 
-The `cachelock` serves to ensure that your code block or function is executed one at a time.
+The `cachelock` serves to ensure that your code block or function is executed one at a time using the cache as acquirer.
 
 How to install:
 ===============
 
     pip install cachelock
 
+or
+
+    pipenv install cachelock
+    
 How to use
 ==========
 
 You can use of two forms:
 
     - Use the `Lock` class to your blocks;
-    - Or, use the decorator `once` to block your functions or tasks;
+    - Or use the decorator `once` to block your functions or tasks;
 
 With cachelock.Lock
-===============
+===================
 
 Arguments:
 
@@ -92,10 +96,12 @@ To work it is necessary that the implementation of the cache has the `get`, `del
             pass
 
     cache = DummyCache()
-    
+
+use: 
+
     @cachelock.once(key=..., cache=cache)
     
-    or
+or
     
     with cachelock.Lock(key..., cache=cache) ...
     

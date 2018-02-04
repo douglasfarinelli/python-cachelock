@@ -13,7 +13,7 @@ def read(fname):
 setup(
     name='cachelock',
     license='MIT',
-    version='0.0.2',
+    version='0.0.3',
     python_requires='>=3.6',
     url='https://github.com/douglasfarinelli/python-cachelock',
     author='Douglas Farinelli',

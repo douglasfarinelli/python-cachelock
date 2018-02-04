@@ -59,3 +59,7 @@ release-major: ## Create minor release
 	@pipenv run bumpversion major
 	@pipenv run towncrier --yes
 	@git commit -am 'Update CHANGELOG' && git push && git push --tags
+
+publish:  ## Publish on pypi
+	@pipenv run python setup.py sdist bdist_wheel upload
+	@rm -fr build dist .egg requests.egg-info

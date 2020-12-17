@@ -59,8 +59,8 @@ try:
 except ModuleNotFoundError:
     default_cache = MemoryCache()
 else:
-    from django.core.cache import cache
-    default_cache = cache[getattr(
+    from django.core.cache import caches
+    default_cache = caches[getattr(
         settings,
         'DEFAULT_CACHELOCK_ALIAS',
         'default'

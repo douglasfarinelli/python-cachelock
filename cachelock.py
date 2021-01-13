@@ -59,15 +59,17 @@ try:
 except ModuleNotFoundError:
     default_cache = MemoryCache()
 else:
-    try:
-        from django.core.cache import caches
-    except ImportError:
-        from django.core.cache import cache as caches
-    default_cache = caches[getattr(
+    cache_alias = getattr(
         settings,
         'DEFAULT_CACHELOCK_ALIAS',
         'default'
-    )]
+    )
+    try:
+        from django.core.cache import caches
+        default_cache = caches[cache_alias]
+    except ImportError:
+        from django.core.cache import get_cache
+        default_cache = get_cache(cache_alias)
 
 
 class Lock:
